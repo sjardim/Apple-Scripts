@@ -1,9 +1,9 @@
 # Instructions
 
-# Open your project file on Scrivener.
-# Download a script file (.scpt) and open it with Script Editor.
-# Run the script in the Script Editor clicking on the play button.
-# Answer the questions asked and enjoy the magic. :)
+1. Open your project file on Scrivener.
+2. Download a script file (.scpt) and open it with Script Editor.
+3. Run the script in the Script Editor clicking on the play button.
+4. Answer the questions asked and enjoy the magic. :)
 
 ## Video preview
 
