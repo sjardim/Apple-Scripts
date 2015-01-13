@@ -1,0 +1,48 @@
+set folder_name to text returned of (display dialog "How you would like to name the folders? E.g 'Chapter', 'Part'?" default answer "Chapter") as text
+set counter to text returned of (display dialog "How many folders do you want?" default answer "2") as number
+set how_many_docs to text returned of (display dialog "How many documents per folder?" default answer "3") as number
+set doc_name to text returned of (display dialog "How you would like to name the documents? E.g 'Scene', 'Document'?" default answer "Untitled") as text
+
+set num_folders to 1
+set num_docs to 1
+
+activate application "Scrivener"
+delay 0.5
+repeat while num_folders ≤ counter
+	tell application "System Events"
+		# create new folder
+		keystroke "n" using {command down, option down}
+		
+		delay 0.5
+		
+		# Entering folder name
+		keystroke folder_name & " " & num_folders
+		
+		delay 0.5
+		
+		#finish folder creating with a return
+		key code 36 #return
+		
+		# ---------------------------
+		# Moving folder left, otherwise it will appears below the previous folder
+		if num_folders ≥ 2 then
+			key code 123 using {command down, control down}
+		end if
+		# ---------------------------
+		
+		# creating documents inside folder
+		repeat how_many_docs times
+			keystroke "n" using {command down}
+			delay 0.2
+			keystroke doc_name & " " & num_docs
+			set num_docs to num_docs + 1
+		end repeat
+		
+	end tell
+	set num_folders to num_folders + 1
+end repeat
+
+#LEFT: (key code 123)
+#RIGHT: key code 124)
+#UP: (key code 126)
+#DOWN: (key code 125)
