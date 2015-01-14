@@ -8,5 +8,6 @@
 ## Video preview
 
 You can see the scripts running here: 
-Creating Folders -> http://www.youtube.com/watch?v=YeSprzAQUfc
-Creating Folders with documents -> https://www.youtube.com/watch?v=C3naa9bGv0Q
+
+- Creating Folders -> http://www.youtube.com/watch?v=YeSprzAQUfc
+- Creating Folders with documents -> https://www.youtube.com/watch?v=C3naa9bGv0Q
